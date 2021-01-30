@@ -33,14 +33,21 @@
       }
     </style>
   </head>
-  <body>
-    <header class="bg-white shadow container-fluid">
+  <body
+    data-spy="scroll"
+    data-target="#navbar"
+    data-offset="70"
+    style="position: relative"
+  >
+    <header class="bg-white shadow container-fluid fixed-top">
       <div class="row text-white">
         <div class="col-md-6 col-9 p-2 pl-3">
-          <h3 class="text-primary">Muhammad Semeer</h3>
+          <a href="/">
+            <h3 class="text-primary">Muhammad Semeer</h3>
+          </a>
         </div>
         <div class="col-md-6 col-3 my-auto">
-          <nav class="navbar navbar-expand-lg navbar-light">
+          <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
             <button
               class="navbar-toggler ml-auto"
               type="button"
@@ -53,569 +60,568 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link text-primary" href="/">Home</a>
+              <ul class="nav ml-auto nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-secondary" href="#services"
-                    >Services</a
-                  >
+                  <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#works" class="nav-link text-secondary"> Works </a>
+                  <a href="#works" class="nav-link"> Works </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-secondary" href="#contact"
-                    >Contact Me</a
-                  >
+                  <a class="nav-link" href="#contact">Contact Me</a>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
         <div
-          class="collapse navbar-collapse col-12"
+          class="collapse navbar-collapse col-12 pb-3"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav">
+          <ul id="navbar" class="navbar-nav nav-fill nav-pills mx-auto w-25">
             <li class="nav-item active">
-              <a class="nav-link text-primary" href="/">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-secondary" href="#services">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a href="#works" class="nav-link text-secondary"> Works </a>
+              <a href="#works" class="nav-link">Works </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-secondary" href="#contact">Contact Me</a>
+              <a class="nav-link" href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
-    <section class="p-4">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img
-              src="./favicon.jpg"
-              alt="Muhammad Semeer - Image"
-              class="img-fluid rounded w-50 mh-100"
-            />
-          </div>
-          <div class="col-md-6">
-            <h4 class="pt-3">
-              I am <span class="text-primary">Muhammad Semeer</span>. Bsc
-              Computer Sciene Student at Yuvakshetra Institute of Management
-              Studies <br />
-              Mundur, Palakkad, Kerala, India
-            </h4>
-          </div>
-        </div>
-        <div class="col-md-12 py-4">
-          <h1 class="text-center">Skills</h1>
-          <p class="mt-2 mb-0">HTML</p>
-          <div class="progress" style="height: 20px">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style="width: 90%"
-              aria-valuenow="90"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              90%
-            </div>
-          </div>
-          <p class="mt-2 mb-0">CSS</p>
-          <div class="progress" style="height: 20px">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style="width: 75%"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              75%
-            </div>
-          </div>
-          <p class="mt-2 mb-0">JS</p>
-          <div class="progress" style="height: 20px">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style="width: 80%"
-              aria-valuenow="80"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              80%
-            </div>
-          </div>
-          <p class="mt-2 mb-0">Git</p>
-          <div class="progress" style="height: 20px">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style="width: 85%"
-              aria-valuenow="85"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              85%
-            </div>
-          </div>
-          <p class="mt-2 mb-0">ReactJS</p>
-          <div class="progress" style="height: 20px">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style="width: 50%"
-              aria-valuenow="50"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              50%
-            </div>
-          </div>
-          <p class="mt-2 mb-0">NodeJS</p>
-          <div class="progress" style="height: 20px">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style="width: 65%"
-              aria-valuenow="65"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              65%
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="bg-light py-5" id="services">
-      <div class="container">
-        <h1 class="text-center">Services</h1>
-        <div class="row">
-          <div class="col-md-4 col-12 col-sm-6 mt-4">
-            <div class="card w-100" style="height: 23.5em">
+    <main class="mt-5">
+      <section class="p-4" id="home">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
               <img
-                src="./web-design.jpg"
-                class="card-img-top"
-                style="height: 200px; object-fit: contain"
-                alt="Web Designing"
+                src="./favicon.jpg"
+                alt="Muhammad Semeer - Image"
+                class="img-fluid rounded w-50 mh-100"
               />
-              <div class="card-body">
-                <h5 class="card-title">Web Design</h5>
-                <p class="card-text">
-                  Web Designing Using HTML, CSS, JS, ReactJS
-                </p>
-              </div>
+            </div>
+            <div class="col-md-6">
+              <h4 class="pt-3">
+                I am <span class="text-primary">Muhammad Semeer</span>. Bsc
+                Computer Sciene Student at Yuvakshetra Institute of Management
+                Studies <br />
+                Mundur, Palakkad, Kerala, India
+              </h4>
             </div>
           </div>
-          <div class="col-md-4 col-12 col-sm-6 mt-4">
-            <div class="card w-100" style="height: 23.5em">
-              <img
-                src="./web-dev.jpg"
-                class="card-img-top"
-                style="height: 200px; object-fit: contain"
-                alt="Web Development"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Web Development</h5>
-                <p class="card-text">
-                  Web Development Using ReactJS, NodeJS and MongoDB
-                </p>
+          <div class="col-md-12 py-4">
+            <h1 class="text-center">Skills</h1>
+            <p class="mt-2 mb-0">HTML</p>
+            <div class="progress" style="height: 20px">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 90%"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                90%
               </div>
             </div>
-          </div>
-          <div class="col-md-4 col-12 col-sm-6 mt-4">
-            <div class="card w-100" style="height: 23.5em">
-              <img
-                src="./responive.jpg"
-                class="card-img-top"
-                style="height: 200px; object-fit: contain"
-                alt="Responsive Web"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Responsive Web</h5>
-                <p class="card-text">
-                  Responsive Web Designing Using CSS Media Queries and Bootstrap
-                </p>
+            <p class="mt-2 mb-0">CSS</p>
+            <div class="progress" style="height: 20px">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 75%"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                75%
+              </div>
+            </div>
+            <p class="mt-2 mb-0">JS</p>
+            <div class="progress" style="height: 20px">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 80%"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                80%
+              </div>
+            </div>
+            <p class="mt-2 mb-0">Git</p>
+            <div class="progress" style="height: 20px">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 85%"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                85%
+              </div>
+            </div>
+            <p class="mt-2 mb-0">ReactJS</p>
+            <div class="progress" style="height: 20px">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 50%"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                50%
+              </div>
+            </div>
+            <p class="mt-2 mb-0">NodeJS</p>
+            <div class="progress" style="height: 20px">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 65%"
+                aria-valuenow="65"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                65%
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="py-5" id="works">
-      <div class="container">
-        <h1 class="text-center">Works</h1>
-        <div class="row pt-4">
-          <div class="col-md-12">
-            <div id="accordion">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button
-                      class="btn btn-secondary"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Clinic Management System
-                    </button>
-                  </h5>
-                </div>
-                <div
-                  id="collapseOne"
-                  class="collapse"
-                  aria-labelledby="headingOne"
-                  data-parent="#accordion"
-                >
-                  <div class="card-body">
-                    <ul>
-                      <li>
-                        App to Manage Appointments and Booking for a Clinic.
-                      </li>
-                      <li>
-                        This App will helps Patients doctors to handle
-                        appointments.
-                      </li>
-                      <li>Node Express</li>
-                      <li>MongoDB</li>
-                      <li>Handlebars</li>
-                      <li>
-                        Nodejs as Server side / back end language and handlebars
-                        as view engine with MongoDB database.
-                      </li>
-                    </ul>
-                    <br />
-                    <a
-                      href="https://care.galaxieon.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-primary"
-                    >
-                      Live Demo
-                    </a>
-                    <a
-                      href="https://github.com/muhammadsemeer/clinic-management-system"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-primary"
-                    >
-                      Source Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
-                    <button
-                      class="btn btn-secondary collapsed"
-                      data-toggle="collapse"
-                      data-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Shopping Cart MongoDB
-                    </button>
-                  </h5>
-                </div>
-                <div
-                  id="collapseTwo"
-                  class="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordion"
-                >
-                  <div class="card-body">
-                    <ul>
-                      <li>Single Vendor</li>
-                      <li>Basic Shopping Cart</li>
-                      <li>Node Express</li>
-                      <li>MongoDB</li>
-                      <li>Handlebars</li>
-                      <li>
-                        Shopping Cart Project with Nodejs as Server side / back
-                        end language and handlebars as view engine with MongoDB
-                        database
-                      </li>
-                    </ul>
-                    <a
-                      href="https://galaxieon-cart-mongodb.herokuapp.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-primary"
-                    >
-                      Live Demo
-                    </a>
-                    <a
-                      href="https://github.com/muhammadsemeer/shopping-cart-mongodb"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-primary"
-                    >
-                      Source Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h5 class="mb-0">
-                    <button
-                      class="btn btn-secondary collapsed"
-                      data-toggle="collapse"
-                      data-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      Shopping Cart With MySQL
-                    </button>
-                  </h5>
-                </div>
-                <div
-                  id="collapseThree"
-                  class="collapse"
-                  aria-labelledby="headingThree"
-                  data-parent="#accordion"
-                >
-                  <div class="card-body">
-                    <ul>
-                      <li>Single Vendor</li>
-                      <li>Basic Shopping Cart</li>
-                      <li>Node Express</li>
-                      <li>MySQL</li>
-                      <li>Handlebars</li>
-                      <li>
-                        Shopping Cart Project with Nodejs as Server side / back
-                        end language and handlebars as view engine with MongoDB
-                        database
-                      </li>
-                    </ul>
-                    <a
-                      href="https://galaxieon-cart-mysql.herokuapp.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-primary"
-                    >
-                      Live Demo
-                    </a>
-                    <a
-                      href="https://github.com/muhammadsemeer/shopping-cart-with-mysql"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-primary"
-                    >
-                      Source Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingFour">
-                  <h5 class="mb-0">
-                    <button
-                      class="btn btn-secondary collapsed"
-                      data-toggle="collapse"
-                      data-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
-                      Covid 19 Tracker - ReactJS
-                    </button>
-                  </h5>
-                </div>
-                <div
-                  id="collapseFour"
-                  class="collapse"
-                  aria-labelledby="headingFour"
-                  data-parent="#accordion"
-                >
-                  <div class="card-body">
-                    <ul>
-                      <li>Simple App</li>
-                      <li>Covid 19 Statistics</li>
-                      <li>World</li>
-                      <li>India - StateWise</li>
-                      <li>ReactJS</li>
-                    </ul>
-                    <a
-                      href="https://muhammadsemeer.github.io/react-covid-19-tracker/#/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-primary"
-                    >
-                      Live Demo
-                    </a>
-                    <a
-                      href="https://github.com/muhammadsemeer/react-covid-19-tracker"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-primary"
-                    >
-                      Source Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingFive">
-                  <h5 class="mb-0">
-                    <button
-                      class="btn btn-secondary collapsed"
-                      data-toggle="collapse"
-                      data-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                    >
-                      Todo-App - ReactJS
-                    </button>
-                  </h5>
-                </div>
-                <div
-                  id="collapseFive"
-                  class="collapse"
-                  aria-labelledby="headingFive"
-                  data-parent="#accordion"
-                >
-                  <div class="card-body">
-                    <ul>
-                      <li>Simple Todo App</li>
-                      <li>Todo List</li>
-                      <li>Neumorphism UI</li>
-                      <li>ReactJS</li>
-                    </ul>
-                    <a
-                      href="https://muhammadsemeer.github.io/React-Todo-App/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-primary"
-                    >
-                      Live Demo
-                    </a>
-                    <a
-                      href="https://github.com/muhammadsemeer/React-Todo-App"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="btn btn-primary"
-                    >
-                      Source Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="bg-light py-5" id="contact">
-      <div class="container">
-        <h1 class="text-center">Contact Me</h1>
-        <div class="row">
-          <div class="col-md-6 col-12 mt-3">
-            <h3>Send Me a Message</h3>
-            <form>
-              <div class="form-group">
-                <label for="inputName">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputName"
-                  placeholder="Name"
-                  required
+      </section>
+      <section class="bg-light py-5" id="services">
+        <div class="container">
+          <h1 class="text-center">Services</h1>
+          <div class="row">
+            <div class="col-md-4 col-12 col-sm-6 mt-4">
+              <div class="card w-100" style="height: 23.5em">
+                <img
+                  src="./web-design.jpg"
+                  class="card-img-top"
+                  style="height: 200px; object-fit: contain"
+                  alt="Web Designing"
                 />
+                <div class="card-body">
+                  <h5 class="card-title">Web Design</h5>
+                  <p class="card-text">
+                    Web Designing Using HTML, CSS, JS, ReactJS
+                  </p>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="inputEmail">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="inputEmail"
-                  placeholder="Email"
-                  required
+            </div>
+            <div class="col-md-4 col-12 col-sm-6 mt-4">
+              <div class="card w-100" style="height: 23.5em">
+                <img
+                  src="./web-dev.jpg"
+                  class="card-img-top"
+                  style="height: 200px; object-fit: contain"
+                  alt="Web Development"
                 />
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">
+                    Web Development Using ReactJS, NodeJS and MongoDB
+                  </p>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="inputMeassage">Message</label>
-                <textarea
-                  id="inputMeassage"
-                  rows="5"
-                  class="form-control"
-                  placeholder="Message.."
-                ></textarea>
+            </div>
+            <div class="col-md-4 col-12 col-sm-6 mt-4">
+              <div class="card w-100" style="height: 23.5em">
+                <img
+                  src="./responive.jpg"
+                  class="card-img-top"
+                  style="height: 200px; object-fit: contain"
+                  alt="Responsive Web"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Responsive Web</h5>
+                  <p class="card-text">
+                    Responsive Web Designing Using CSS Media Queries and
+                    Bootstrap
+                  </p>
+                </div>
               </div>
-              <button type="submit" class="btn btn-primary">Contact</button>
-            </form>
-          </div>
-          <div class="col-md-6 col-12 mt-3">
-            <h3>Say Hi</h3>
-            <p class="text-secondary" style="font-size: 1.25rem">
-              If you need a personal website or webiste for your bussiness. For
-              any kind of website/web apps. Send Me message through this site or
-              Connect me through any of the below.
-            </p>
-            <h3>Connect Me Through</h3>
-            <a
-              href="https://www.facebook.com/MuhammmadSemeer"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-primary rounded"
-            >
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/muhammad_semeer/"
-              class="btn btn-danger bg-gradient"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a
-              href="https://github.com/muhammadsemeer"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-dark"
-            >
-              <i class="bi bi-github"></i
-            ></a>
-            <a
-              href="https://wa.me/918891389078"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-success"
-            >
-              <i class="bi bi-whatsapp"></i>
-            </a>
-            <a
-              href="tel:+919567649078"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-secondary"
-            >
-              <i class="bi bi-telephone-fill"></i>
-            </a>
-            <a
-              href="mailto:muhammadsemeerali@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-danger"
-            >
-              <i class="bi bi-envelope-fill"></i>
-            </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="py-5" id="works">
+        <div class="container">
+          <h1 class="text-center">Works</h1>
+          <div class="row pt-4">
+            <div class="col-md-12">
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-secondary"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Clinic Management System
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          App to Manage Appointments and Booking for a Clinic.
+                        </li>
+                        <li>
+                          This App will helps Patients doctors to handle
+                          appointments.
+                        </li>
+                        <li>Node Express</li>
+                        <li>MongoDB</li>
+                        <li>Handlebars</li>
+                        <li>
+                          Nodejs as Server side / back end language and
+                          handlebars as view engine with MongoDB database.
+                        </li>
+                      </ul>
+                      <br />
+                      <a
+                        href="https://care.galaxieon.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/muhammadsemeer/clinic-management-system"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-secondary collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Shopping Cart MongoDB
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>Single Vendor</li>
+                        <li>Basic Shopping Cart</li>
+                        <li>Node Express</li>
+                        <li>MongoDB</li>
+                        <li>Handlebars</li>
+                        <li>
+                          Shopping Cart Project with Nodejs as Server side /
+                          back end language and handlebars as view engine with
+                          MongoDB database
+                        </li>
+                      </ul>
+                      <a
+                        href="https://galaxieon-cart-mongodb.herokuapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/muhammadsemeer/shopping-cart-mongodb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-secondary collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Shopping Cart With MySQL
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>Single Vendor</li>
+                        <li>Basic Shopping Cart</li>
+                        <li>Node Express</li>
+                        <li>MySQL</li>
+                        <li>Handlebars</li>
+                        <li>
+                          Shopping Cart Project with Nodejs as Server side /
+                          back end language and handlebars as view engine with
+                          MongoDB database
+                        </li>
+                      </ul>
+                      <a
+                        href="https://galaxieon-cart-mysql.herokuapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/muhammadsemeer/shopping-cart-with-mysql"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-secondary collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        Covid 19 Tracker - ReactJS
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    class="collapse"
+                    aria-labelledby="headingFour"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>Simple App</li>
+                        <li>Covid 19 Statistics</li>
+                        <li>World</li>
+                        <li>India - StateWise</li>
+                        <li>ReactJS</li>
+                      </ul>
+                      <a
+                        href="https://muhammadsemeer.github.io/react-covid-19-tracker/#/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/muhammadsemeer/react-covid-19-tracker"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-secondary collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                      >
+                        Todo-App - ReactJS
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseFive"
+                    class="collapse"
+                    aria-labelledby="headingFive"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>Simple Todo App</li>
+                        <li>Todo List</li>
+                        <li>Neumorphism UI</li>
+                        <li>ReactJS</li>
+                      </ul>
+                      <a
+                        href="https://muhammadsemeer.github.io/React-Todo-App/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/muhammadsemeer/React-Todo-App"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-light py-5" id="contact">
+        <div class="container">
+          <h1 class="text-center">Contact Me</h1>
+          <div class="row">
+            <div class="col-md-6 col-12 mt-3">
+              <h3>Send Me a Message</h3>
+              <form>
+                <div class="form-group">
+                  <label for="inputName">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="inputMeassage">Message</label>
+                  <textarea
+                    id="inputMeassage"
+                    rows="5"
+                    class="form-control"
+                    placeholder="Message.."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Contact</button>
+              </form>
+            </div>
+            <div class="col-md-6 col-12 mt-3">
+              <h3>Say Hi</h3>
+              <p class="text-secondary" style="font-size: 1.25rem">
+                If you need a personal website or webiste for your bussiness.
+                For any kind of website/web apps. Send Me message through this
+                site or Connect me through any of the below.
+              </p>
+              <h3>Connect Me Through</h3>
+              <a
+                href="https://www.facebook.com/MuhammmadSemeer"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary rounded"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/muhammad_semeer/"
+                class="btn btn-danger bg-gradient"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://github.com/muhammadsemeer"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-dark"
+              >
+                <i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://wa.me/918891389078"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-success"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a
+                href="tel:+919567649078"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary"
+              >
+                <i class="bi bi-telephone-fill"></i>
+              </a>
+              <a
+                href="mailto:muhammadsemeerali@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-danger"
+              >
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="bg-light">
       <div class="container">
         <div class="row">
