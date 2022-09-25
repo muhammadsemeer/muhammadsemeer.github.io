@@ -15,7 +15,12 @@
                 background-color: #0d1117;
                 color: #fff;
                 font-family: "Fira Code", monospace;
-                margin: 0 10em;
+                margin: 0 auto;
+                max-width: calc(100vw - 100px);
+            }
+            .overflow {
+                overflow-x: auto;
+                width: 100%;
             }
         </style>
     </head>
@@ -324,20 +329,20 @@
 
         <h3 id="badges">Badges</h3>
         <p><b>My GitHub Stats</b></p>
-        <p>
+        <p class="overflow">
             <a href="http://www.github.com/muhammadsemeer"
                 ><img
                     src="https://github-readme-stats.vercel.app/api?username=muhammadsemeer&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true"
                     alt="muhammadsemeer's GitHub stats"
             /></a>
         </p>
-        <p>
+        <p class="overflow">
             <a href="http://www.github.com/muhammadsemeer"
                 ><img
                     src="https://github-readme-streak-stats.herokuapp.com/?user=muhammadsemeer&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true"
             /></a>
         </p>
-        <p>
+        <p class="overflow">
             <a href="https://github.com/muhammadsemeer" align="left"
                 ><img
                     src="https://github-readme-stats.vercel.app/api/top-langs/?username=muhammadsemeer&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages"
